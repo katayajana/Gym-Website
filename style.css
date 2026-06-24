@@ -1,0 +1,193 @@
+.login-page{
+    background-image: url("assets/OIP.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.login-card{
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(8px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.login-btn{
+    background-color: #FFD700;
+    color: black;
+    border: none;
+    font-weight: bold;
+}
+
+.login-btn:hover{
+    background-color: #FFC107;
+    color: black;
+}
+
+.navbar{
+    background-color: #111111;
+    min-height: 80px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.nav-link{
+    font-size: 1.3rem;
+    font-weight: 400;
+    transition: 0.3s;
+    color: white !important;
+}
+
+.navbar-nav .nav-link{
+    margin-left: 20px;
+}
+
+.nav-link.active{
+    text-decoration: underline;
+}
+
+.nav-link:hover{
+    transform: translateY(-2px);
+}
+
+.carousel-indicators button{
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50%;
+    margin: 0 5px !important;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-item{
+    transition: transform 1s ease-in-out;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.about-image{
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+}
+
+footer a{
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+footer a:hover{
+    color: rgb(106, 145, 184) !important;
+    transform: scale(1.5);
+}
+
+.banner-section{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.services-banner{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.service-card .card{
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 8px 15px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.service-card .card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.2);
+}
+
+.service-card img{
+    height: 280px;
+    object-fit: cover;
+}
+
+.card-title{
+    font-weight: bold;
+}
+
+.card-text{
+    text-align: justify
+}
+
+#listViewBtn, #gridViewBtn{
+    min-width: 140px;
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+.services-title{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.services-subtitle{
+    color: #666;
+}
+
+.list-view .card{
+    flex-direction: row;
+    align-items: center;
+}
+
+.list-view .card-img{
+    width: 420px;
+    min-width: 420px;
+    height: 250px;
+    object-fit: contain;
+    background: #fff;
+}
+
+.list-view .card-body{
+    padding: 25px;
+}
+
+.contact-card p a{
+    color: #ffd700;
+    text-decoration: none;
+}
+
+.contact-card p a:hover{
+    color: #ffc107;
+}
+
+.contact-card div a:hover{
+    color: rgb(106, 145, 184);
+}
+
+.contact-card div a{
+    color: #111111;
+    text-decoration: none !important;
+}
+
+.contact-card{
+    width: 90%;
+}
+
+.contact-card div a{
+    color: #111111;
+    font-size: 1.5rem;
+}
