@@ -68,28 +68,90 @@ if(listViewBtn && gridViewBtn){
 
     listViewBtn.addEventListener("click", function(){
 
-        serviceCards.forEach(function(card){
+    const serviceCards = document.querySelectorAll(".service-card");
 
-            card.classList.remove("col-md-6");
-            card.classList.add("col-12");
+    serviceCards.forEach(function(card){
 
-            card.classList.add("list-view");
+        card.classList.remove("col-md-6");
+        card.classList.add("col-12");
 
-        });
+        card.classList.add("list-view");
 
     });
+
+});
 
     gridViewBtn.addEventListener("click", function(){
 
-        serviceCards.forEach(function(card){
+    const serviceCards = document.querySelectorAll(".service-card");
 
-            card.classList.remove("col-12");
-            card.classList.add("col-md-6");
+    serviceCards.forEach(function(card){
 
-            card.classList.remove("list-view");
+        card.classList.remove("col-12");
+        card.classList.add("col-md-6");
 
-        });
+        card.classList.remove("list-view");
 
     });
 
+});
+
+}
+
+async function LoadServices() {
+
+    const services = await GetAllServices();
+
+    const loader = document.getElementById("loader");
+    const container = document.getElementById("servicesContainer");
+
+    loader.style.display = "block";
+    container.style.display = "none";
+
+    await new Promise(resolve => setTimeout(resolve, 3000));
+
+    loader.style.display = "none";
+    container.style.display = "flex";
+
+    container.innerHTML = "";
+
+    services.forEach(service => {
+
+        container.innerHTML += `
+            <div class="col-md-6 service-card">
+
+                <div class="card h-100">
+
+                    <img src="${service.image}"
+                         class="card-img-top"
+                         alt="${service.title}">
+
+                    <div class="card-body">
+
+                        <h3 class="card-title">
+                            ${service.title}
+                        </h3>
+
+                        <p>
+                            <strong>Schedule:</strong>
+                            ${service.schedule}
+                        </p>
+
+                        <p class="card-text">
+                            ${service.description}
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        `;
+
+    });
+
+}
+
+if(document.getElementById("servicesContainer")){
+    LoadServices();
 }
