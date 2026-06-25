@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "title": "Gym Membership",
+        "schedule": "Monday - Sunday",
+        "description": "Full access to all gym facilities, modern equipment, and fitness areas.",
+        "image": "assets/gym membership service.png"
+    },
+    {
+        "id": 2,
+        "title": "Taekwondo",
+        "schedule": "Tuesday & Thursday",
+        "description": "Improve discipline, flexibility, confidence, and self-defense skills.",
+        "image": "assets/taekwondo service.png"
+    },
+    {
+        "id": 3,
+        "title": "Zumba Class",
+        "schedule": "Monday, Wednesday & Friday",
+        "description": "High-energy dance workouts designed to improve fitness while having fun.",
+        "image": "assets/zumba service.png"
+    },
+    {
+        "id": 4,
+        "title": "Padel Court",
+        "schedule": "Daily Reservation",
+        "description": "Professional padel courts available for training and matches.",
+        "image": "assets/padel court service.png"
+    }
+]
