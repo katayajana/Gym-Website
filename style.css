@@ -79,23 +79,6 @@ section{
 
 /*Home Page*/
 
-.carousel-indicators button{
-    width: 12px !important;
-    height: 12px !important;
-    border-radius: 50%;
-    margin: 0 5px !important;
-}
-
-.carousel-item img{
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.carousel-item{
-    transition: transform 1s ease-in-out;
-}
-
 .about-image{
     border-radius: 15px;
     box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
@@ -259,20 +242,15 @@ footer a:hover{
 
 }
 
-/*Hero Swiper*/
-
-.mySwiper .swiper-button-next,
-.mySwiper .swiper-button-prev{
-    color: #FFD700;
+:root {
+    --swiper-theme-color: #FFD700;
 }
+
+/*Hero Swiper*/
 
 .mySwiper .swiper-pagination-bullet{
     background: white;
     opacity: 1;
-}
-
-.mySwiper .swiper-pagination-bullet-active{
-    background: #FFD700;
 }
 
 /* Services Swiper */
@@ -282,16 +260,7 @@ footer a:hover{
     padding-bottom: 50px;
 }
 
-.servicesSwiper .swiper-button-next,
-.servicesSwiper .swiper-button-prev{
-    color: #FFD700;
-}
-
 .servicesSwiper .swiper-pagination-bullet{
     background: white;
     opacity: 1;
-}
-
-.servicesSwiper .swiper-pagination-bullet-active{
-    background: #FFD700;
 }
