@@ -259,3 +259,39 @@ footer a:hover{
 
 }
 
+/*Hero Swiper*/
+
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev{
+    color: #FFD700;
+}
+
+.mySwiper .swiper-pagination-bullet{
+    background: white;
+    opacity: 1;
+}
+
+.mySwiper .swiper-pagination-bullet-active{
+    background: #FFD700;
+}
+
+/* Services Swiper */
+
+.servicesSwiper{
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.servicesSwiper .swiper-button-next,
+.servicesSwiper .swiper-button-prev{
+    color: #FFD700;
+}
+
+.servicesSwiper .swiper-pagination-bullet{
+    background: white;
+    opacity: 1;
+}
+
+.servicesSwiper .swiper-pagination-bullet-active{
+    background: #FFD700;
+}
