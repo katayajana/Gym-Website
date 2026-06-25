@@ -1,3 +1,5 @@
+/*Login Page*/
+
 .login-page{
     background-image: url("assets/OIP.jpg");
     background-size: cover;
@@ -27,6 +29,8 @@
     color: black;
 }
 
+/*Navigation Bar*/
+
 .navbar{
     background-color: #111111;
     min-height: 80px;
@@ -53,6 +57,28 @@
     transform: translateY(-2px);
 }
 
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+/*General Page Styling*/
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+/*Home Page*/
+
 .carousel-indicators button{
     width: 12px !important;
     height: 12px !important;
@@ -70,20 +96,12 @@
     transition: transform 1s ease-in-out;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-}
-
-section{
-    margin-top: 80px;
-    margin-bottom: 80px;
-}
-
 .about-image{
     border-radius: 15px;
     box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
 }
+
+/*Footer*/
 
 footer a{
     text-decoration: none;
@@ -95,6 +113,8 @@ footer a:hover{
     color: rgb(106, 145, 184) !important;
     transform: scale(1.5);
 }
+
+/*Services Page*/
 
 .banner-section{
     margin-top: 0;
@@ -125,20 +145,6 @@ footer a:hover{
     object-fit: cover;
 }
 
-.card-title{
-    font-weight: bold;
-}
-
-.card-text{
-    text-align: justify
-}
-
-#listViewBtn, #gridViewBtn{
-    min-width: 140px;
-    border-radius: 25px;
-    font-weight: 500;
-}
-
 .services-title{
     font-weight: bold;
     margin-bottom: 10px;
@@ -146,6 +152,22 @@ footer a:hover{
 
 .services-subtitle{
     color: #666;
+}
+
+.card-title{
+    font-weight: bold;
+}
+
+.card-text{
+    text-align: justify;
+}
+
+/*List/Grid View*/
+
+#listViewBtn, #gridViewBtn{
+    min-width: 140px;
+    border-radius: 25px;
+    font-weight: 500;
 }
 
 .list-view .card{
@@ -165,6 +187,12 @@ footer a:hover{
     padding: 25px;
 }
 
+/*Contact Page*/
+
+.contact-card{
+    width: 90%;
+}
+
 .contact-card p a{
     color: #ffd700;
     text-decoration: none;
@@ -174,19 +202,17 @@ footer a:hover{
     color: #ffc107;
 }
 
-.contact-card div a:hover{
-    color: rgb(106, 145, 184);
-}
-
 .contact-card div a{
     color: #111111;
     text-decoration: none !important;
     font-size: 1.5rem;
 }
 
-.contact-card{
-    width: 90%;
+.contact-card div a:hover{
+    color: rgb(106, 145, 184);
 }
+
+/*Responsive Design*/
 
 @media (max-width: 992px){
 
@@ -233,10 +259,3 @@ footer a:hover{
 
 }
 
-.navbar-toggler{
-    border: none;
-}
-
-.navbar-toggler:focus{
-    box-shadow: none;
-}
