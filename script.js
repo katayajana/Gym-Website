@@ -163,3 +163,70 @@ async function LoadServices() {
 if(document.getElementById("servicesContainer")){
     LoadServices();
 }
+
+async function LoadHomeServices() {
+
+    const services = await GetAllServices();
+
+    const container = document.getElementById("homeServicesContainer");
+
+    if (!container) return;
+
+    container.innerHTML = "";
+
+    services.forEach(service => {
+
+        container.innerHTML += `
+            <div class="swiper-slide">
+
+                <div class="card h-100">
+
+                    <img src="${service.image}"
+                         class="card-img-top"
+                         alt="${service.title}">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            ${service.title}
+                        </h5>
+
+                        <p class="card-text">
+                            ${service.description}
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        `;
+
+    });
+
+    new Swiper(".servicesSwiper", {
+
+        slidesPerView: 2,
+        spaceBetween: 30,
+
+        pagination: {
+            el: ".services-pagination",
+            clickable: true,
+        },
+
+        breakpoints: {
+            0: {
+                slidesPerView: 1
+            },
+            768: {
+                slidesPerView: 2
+            }
+        }
+
+    }); 
+
+}
+
+if(document.getElementById("homeServicesContainer")){
+    LoadHomeServices();
+}
