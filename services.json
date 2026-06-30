@@ -26,5 +26,19 @@
         "schedule": "Daily Reservation",
         "description": "Professional padel courts available for training and matches.",
         "image": "assets/padel court service.png"
+    },
+    {
+        "id": 5,
+        "title": "Pilates",
+        "schedule": "Tuesday, Thursday & Saturday",
+        "description": "Build core strength, improve flexibility, and enhance balance with professional Pilates classes designed for all experience levels.",
+        "image": "assets/pilates service.png"
+    },
+    {
+        "id": 6,
+        "title": "Personal Training",
+        "schedule": "By appointment",
+        "description": "Receive one-on-one coaching with certified trainers to achieve your fitness goals through personalized workout plans.",
+        "image": "assets/personal training service.png"
     }
 ]
