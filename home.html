@@ -158,157 +158,11 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 
     <div class="swiper servicesSwiper">
 
-        <div class="swiper-wrapper">
-
-            <!-- Gym Membership -->
-
-            <div class="swiper-slide">
-
-                <div class="card h-100">
-
-                    <img src="assets/gym membership service.png"
-                         class="card-img-top"
-                         alt="Gym Membership">
-
-                    <div class="card-body">
-
-                        <h5 class="card-title">Gym Membership</h5>
-
-                        <p class="card-text">
-                            Full access to all gym facilities.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Taekwondo -->
-
-            <div class="swiper-slide">
-
-                <div class="card h-100">
-
-                    <img src="assets/taekwondo service.png"
-                         class="card-img-top"
-                         alt="Taekwondo">
-
-                    <div class="card-body">
-
-                        <h5 class="card-title">Taekwondo</h5>
-
-                        <p class="card-text">
-                            Improve discipline and confidence.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Zumba -->
-
-            <div class="swiper-slide">
-
-                <div class="card h-100">
-
-                    <img src="assets/zumba service.png"
-                         class="card-img-top"
-                         alt="Zumba">
-
-                    <div class="card-body">
-
-                        <h5 class="card-title">Zumba Class</h5>
-
-                        <p class="card-text">
-                            High-energy dance workouts.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Padel -->
-
-            <div class="swiper-slide">
-
-                <div class="card h-100">
-
-                    <img src="assets/padel court service.png"
-                         class="card-img-top"
-                         alt="Padel">
-
-                    <div class="card-body">
-
-                        <h5 class="card-title">Padel Court</h5>
-
-                        <p class="card-text">
-                            Professional courts for matches.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Pilates -->
-
-            <div class="swiper-slide">
-
-                <div class="card h-100">
-
-                    <img src="assets/pilates service.png"
-                        class="card-img-top"
-                        alt="Pilates">
-
-                    <div class="card-body">
-
-                        <h5 class="card-title">Pilates</h5>
-
-                        <p class="card-text">
-                            Build core strength, improve flexibility, and enhance balance.
-                        </p>
-
-                    </div>
-                    
-                </div>
-
-            </div>
-
-            <!-- Personal Training -->
-            <div class="swiper-slide">
-
-                <div class="card h-100">
-
-                    <img src="assets/personal training service.png"
-                        class="card-img-top"
-                        alt="Personal Training">
-
-                    <div class="card-body">
-
-                        <h5 class="card-title">Personal Training</h5>
-
-                        <p class="card-text">
-                            Receive one-on-one coaching with certified trainers.
-                        </p>
-
-                    </div>
-                    
-                </div>
-
-            </div>
+        <div class="swiper-wrapper" id="homeServicesContainer">
             
         </div>
 
         <div class="swiper-pagination services-pagination"></div>
-
-        <div class="swiper-button-prev services-button-prev"></div>
-        <div class="swiper-button-next services-button-next"></div>
 
     </div>
 
@@ -359,6 +213,9 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+<script src="api.js"></script>
+<script src="script.js"></script>
+
 <script>
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
 
@@ -387,34 +244,6 @@ const swiper = new Swiper(".mySwiper", {
 
 });
 
-const servicesSwiper = new Swiper(".servicesSwiper", {
-
-    slidesPerView: 2,
-    spaceBetween: 30,
-
-    pagination: {
-        el: ".services-pagination",
-        clickable: true,
-    },
-
-    navigation: {
-    nextEl: ".services-button-next",
-    prevEl: ".services-button-prev",
-    },
-
-    breakpoints: {
-
-        0: {
-            slidesPerView: 1
-        },
-
-        768: {
-            slidesPerView: 2
-        }
-
-    }
-
-});
 </script>
 
 </body>
