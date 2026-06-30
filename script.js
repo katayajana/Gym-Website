@@ -12,16 +12,24 @@ form.addEventListener("submit", function(event){
     event.preventDefault();
 
     const email = document.getElementById("email").value;
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;  
     const password = document.getElementById("password").value;
 
     errorMessage.innerHTML = "";
 
-    if(email !== correctEmail && password !== correctPassword){
+    if (!emailPattern.test(email)) {
 
-        errorMessage.innerHTML =
-        "Please enter a valid email and password.";
+    errorMessage.innerHTML =
+    "Please enter a valid email format.";
 
-    }
+}
+
+    else if(email !== correctEmail && password !== correctPassword){
+
+    errorMessage.innerHTML =
+    "Please enter a valid email and password.";
+
+}
 
     else if(email !== correctEmail){
 
